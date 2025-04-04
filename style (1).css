@@ -1,0 +1,256 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #24252D
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.head-bar {
+  height: 45px;
+  width: 100%;
+  background-color: #191919;
+  display: flex;
+  align-items: center;
+  
+}
+
+.right-sec {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+  margin-left: auto;
+  margin-right: 7px;
+}
+
+.right-section i {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#app-name {
+  color: white;
+  font-weight: bolder;
+  font-family: 'Billabong', cursive;
+
+  font-size: 20px;
+  margin-left: 5px;
+  text-shadow: 0px 0px 5px black;
+  cursor: pointer;
+}
+
+#like-noti {
+  margin-right: 5px;
+  font-size: 20px;
+  color: #BB2222;
+  cursor: pointer;
+}
+
+#account {
+   color: white;
+   cursor: pointer;
+}
+
+#new-post {
+  cursor: pointer;
+  color: white;
+ 
+
+}
+.Post-sec {
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.post-profile {
+  height: 40px;
+ background-color: rgb(255, 255, 255, 0.2)
+  ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: white;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  
+}
+
+#Post-name {
+  margin-left: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+.post-profile img {
+  height: 35px;
+  border-radius: 100px;
+  aspect-ratio: 1 / 1;
+ margin-top: 4px;
+ margin-left: 3px;
+ cursor: pointer;
+}
+
+.follow-btn {
+  padding: 8px 16px;
+  background-color: #3897f0; /* Instagram blue */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left:auto;
+  margin-right: 10px;
+}
+
+.follow-btn.Following {
+  background-color: #efefef;
+  color: #262626;
+  border: 1px solid #ccc;
+  margin-left:auto;
+  margin-right: 10px;
+}
+
+#post-img {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+ 
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+#post-img:hover {
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#post-img img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: cover;
+}
+
+#like-com-sec {
+  
+  max-width: 500px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 12px;  
+  font-size: 20px;
+  color: white;
+  border-bottom: 2px solid white;
+  background-color: rgb(255, 255, 255, 0.2)
+;
+}
+
+#like-com-sec i {
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#like-com-sec i:hover {
+  transform: scale(1.2);
+  color: #ff3040;
+}
+#Battle {
+  margin-left: auto;
+  display: inline-block;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 5px solid rgb(178, 0, 0);
+  border-radius: 10px;
+  background-color: rgb(178, 0, 0);
+}
+
+
+#caption {
+  color: white;
+  margin-top: 5px;
+  max-width: 500px;
+  overflow-wrap: break-word; /* break long words or links */
+  word-break: break-word;   /* extra safety */
+  overflow: hidden;    
+}
+
+.commentModal {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: #4c4747;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  transition: bottom 0.3s ease;
+  z-index: 1000;
+}
+
+.commentModal.show {
+  bottom: 0;
+}
+
+.comment-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 15px;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.comment-body {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 10px;
+  overflow-wrap: break-word; /* break long words or links */
+  word-break: break-word;   /* extra safety */
+  overflow: hidden;   
+  overflow-y: auto;
+  height: 100%;
+  padding: 10px;
+}
+
+
+.add-comment {
+  display: flex;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.add-comment input {
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.add-comment button {
+  background-color: #3897f0;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
